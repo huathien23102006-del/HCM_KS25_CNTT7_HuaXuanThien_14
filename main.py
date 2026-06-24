@@ -15,7 +15,7 @@ class RestaurantBill:
         self.classify_bill()
 
     def calculate_total_bill(self):
-        self.total_bill = (self.food_amount * vat_rate ) / 100
+        self.total_bill = (self.food_amount * self.vat_rate ) / 100
 
     def classify_bill(self):
         if self.total_bill >= 5000000:
